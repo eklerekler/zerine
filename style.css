@@ -1,0 +1,339 @@
+body {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+
+.imgbox {
+  overflow: hidden;
+}
+.imgbox img {
+  width: 100%;
+}
+
+section {
+  padding: 90px 0;
+}
+section h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+header {
+  padding: 25px 0;
+  background-color: #212529;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+header .menu .imgbox {
+  width: 140px;
+}
+header .menu .imgbox img:hover {
+  cursor: pointer;
+}
+header .menu nav a {
+  font-size: 17px;
+  color: white;
+  margin-right: 27px;
+  transition: 0.25s;
+}
+header .menu nav a:hover {
+  color: #e3ae11;
+  cursor: pointer;
+}
+header .menu .btn {
+  display: none;
+}
+@media (max-width: 992px) {
+  header .menu .imgbox img:hover {
+    cursor: pointer;
+  }
+  header .menu nav {
+    display: none;
+  }
+  header .menu .btn {
+    display: flex;
+    border: 0.5px solid #999c9e;
+    border-radius: 5px;
+    color: #999c9e;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  header .menu .btn i {
+    margin-left: 5px;
+  }
+}
+@media (max-width: 280px) {
+  header .menu .imgbox img:hover {
+    cursor: pointer;
+  }
+  header .menu nav {
+    display: none;
+  }
+  header .menu .btn {
+    display: flex;
+    border: 0.5px solid #999c9e;
+    border-radius: 5px;
+    color: #999c9e;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  header .menu .btn i {
+    margin-left: 5px;
+  }
+}
+
+#welcome {
+  padding: 200px 0;
+  background-image: url("assets/header-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+#welcome .box h1 {
+  margin-top: 55px;
+  font-weight: normal;
+}
+#welcome .box h2 {
+  font-size: 90px;
+  font-weight: 700;
+  margin: 35px 0 60px;
+}
+#welcome .box h1, #welcome .box h2 {
+  color: white;
+}
+#welcome .box h1:hover, #welcome .box h2:hover {
+  cursor: auto;
+}
+#welcome .box .btn {
+  padding: 21px 48px;
+  color: white;
+  background-color: #ffc800;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 7px;
+}
+#welcome .box .btn:hover {
+  background-color: #d9aa00;
+}
+#welcome .box .btn h3:hover {
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  #welcome {
+    padding: 100px 0;
+    background-image: url("assets/header-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+  }
+  #welcome .box h1 {
+    font-size: 30px;
+    margin-top: 75px;
+  }
+  #welcome .box h2 {
+    font-size: 62px;
+    font-weight: 700;
+    margin: 25px 0 40px;
+  }
+  #welcome .box h1, #welcome .box h2 {
+    color: white;
+  }
+  #welcome .box h1:hover, #welcome .box h2:hover {
+    cursor: auto;
+  }
+  #welcome .box .btn {
+    padding: 21px 48px;
+    color: white;
+    background-color: #ffc800;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 7px;
+  }
+  #welcome .box .btn:hover {
+    background-color: #d9aa00;
+  }
+  #welcome .box .btn h3:hover {
+    cursor: pointer;
+  }
+}
+
+#services .box {
+  text-align: center;
+}
+#services .box h3 {
+  margin: 25px 0 60px;
+}
+#services .box h3, #services .box h4 {
+  font-size: 20px;
+  color: #6f7783;
+}
+#services .box h1:hover, #services .box h2:hover, #services .box h3:hover, #services .box h4:hover {
+  cursor: auto;
+}
+#services .box .minibox {
+  width: 130px;
+  height: 130px;
+  border-radius: 100px;
+  background-color: #ffc800;
+  display: inline-block;
+}
+#services .box .minibox .icon {
+  color: white;
+  font-size: 60px;
+  margin: 35px 0;
+}
+#services .box .textbox h2 {
+  font-size: 31px;
+  font-weight: 700;
+  margin: 16px 0 24px;
+}
+#services .box .textbox h4 {
+  line-height: 1.4;
+  margin-bottom: 18px;
+}
+
+#portfolio {
+  background-color: #f8f9fa;
+}
+#portfolio h3, #portfolio h4 {
+  font-size: 20px;
+  color: #6f7783;
+}
+#portfolio h3 {
+  margin: 23px 0 63px;
+}
+#portfolio h1:hover, #portfolio h2:hover, #portfolio h3:hover, #portfolio h4:hover {
+  cursor: auto;
+}
+#portfolio .box .imgbox {
+  position: relative;
+}
+#portfolio .box .imgbox .hoverbox {
+  width: 100%;
+  height: 100%;
+  background-color: #f5be0c;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+#portfolio .box .imgbox .hoverbox:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+#portfolio .box .imgbox .hoverbox .icon {
+  color: white;
+  font-size: 60px;
+}
+#portfolio .box .textbox {
+  text-align: center;
+  background-color: white;
+  padding: 28px 0;
+  margin-bottom: 25px;
+}
+#portfolio .box .textbox h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+@media (max-width: 576px) {
+  #portfolio {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+  }
+  #portfolio h1 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  #portfolio h3, #portfolio h4 {
+    font-size: 20px;
+    color: #6f7783;
+  }
+  #portfolio h3 {
+    margin: 23px 0 63px;
+  }
+  #portfolio h1:hover, #portfolio h2:hover, #portfolio h3:hover, #portfolio h4:hover {
+    cursor: auto;
+  }
+  #portfolio .box .imgbox {
+    position: relative;
+    width: 80%;
+    margin: auto;
+  }
+  #portfolio .box .imgbox .hoverbox {
+    width: 100%;
+    height: 100%;
+    background-color: #f5be0c;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+  #portfolio .box .imgbox .hoverbox:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+  #portfolio .box .imgbox .hoverbox .icon {
+    color: white;
+    font-size: 60px;
+  }
+  #portfolio .box .textbox {
+    text-align: center;
+    background-color: white;
+    padding: 28px 0;
+    margin-bottom: 25px;
+  }
+  #portfolio .box .textbox h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+}
+
+#about h3 {
+  font-size: 19px;
+  color: #6f7783;
+  margin-top: 24px;
+}
+#about .box {
+  display: flex;
+  align-items: center;
+  height: 48%;
+}
+#about .box .imgbox {
+  border-radius: 50%;
+  width: 12%;
+  display: inline-block;
+}
+#about .box .textbox {
+  width: 31%;
+  display: inline-block;
+}
+#about .box .textbox h2 {
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+#about .box .textbox p {
+  font-size: 19px;
+  color: #6f7783;
+  line-height: 1.4;
+}
+#about .box .imgleft {
+  margin-left: auto;
+}
+#about .box .txtrght {
+  text-align: right;
+  margin-right: 55px;
+}
+#about .box .txtleft {
+  margin-left: 55px;
+}/*# sourceMappingURL=style.css.map */

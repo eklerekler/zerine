@@ -1,0 +1,58 @@
+header
+    padding: 25px 0
+    background-color: #212529
+    position: fixed
+    right: 0
+    left: 0
+    z-index: 1
+    .menu
+        .imgbox
+            width: 140px
+            img
+                &:hover
+                    cursor: pointer
+        nav
+            a
+                font-size: 17px
+                color: #ffff
+                margin-right: 27px
+                transition: 0.25s
+                &:hover
+                    color: #e3ae11
+                    cursor: pointer
+        .btn
+            display: none
+    @media (max-width: 992px)
+        .menu
+            .imgbox
+                img
+                    &:hover
+                        cursor: pointer
+            nav
+                display: none
+            .btn
+                display: flex
+                border: 0.5px solid #999c9e
+                border-radius: 5px
+                color: #999c9e
+                font-size: 14px
+                font-weight: 700
+                i
+                    margin-left: 5px
+    @media (max-width: 280px)
+        .menu
+            .imgbox
+                img
+                    &:hover
+                        cursor: pointer
+            nav
+                display: none
+            .btn
+                display: flex
+                border: 0.5px solid #999c9e
+                border-radius: 5px
+                color: #999c9e
+                font-size: 14px
+                font-weight: 700
+                i
+                    margin-left: 5px
